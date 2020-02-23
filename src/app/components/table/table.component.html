@@ -1,0 +1,16 @@
+<table mdbTable small="true">
+    <thead>
+      <tr>
+        <th scope="col" *ngFor="let head of headElements">{{head}}</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr mdbTableCol *ngFor="let item of items">
+        <th>{{item.producto.id}}</th>
+        <td>{{item.producto.name}}</td>
+        <td>{{item.producto.price}}</td>
+        <td>{{item.cantidad}}</td>
+      </tr>
+    </tbody>
+  </table>

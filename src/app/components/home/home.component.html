@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-10">
+            <app-search (obtener)="getProductsSearchted($event)"></app-search>
+        
+        </div>
+        <div class="col-md-2">
+            <app-carro-compras [itemsCarrito]="itemsEnCarro"></app-carro-compras>
+        
+        </div>
+    </div>
+    <app-carts [items]="listaProductos"  (obtenerCarro)="getCarritoCompras($event)"></app-carts>
+    <button (click)="openCarrito()">Ver</button>
+</div>
+

@@ -1,0 +1,8 @@
+<form #busqueda="ngForm" class="form-inline waves-light" mdbWavesEffect (ngSubmit)="onClickSubmit(busqueda.value)">
+    <div class="md-form my-0" >
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" name="termino" ngModel>
+    </div>
+    <input type="submit" mdbBtn color="primary" mdbWavesEffect value="Buscar">
+    
+
+</form>
